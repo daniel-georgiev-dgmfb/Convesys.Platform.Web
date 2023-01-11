@@ -76,8 +76,8 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var readFromCache = false;
             var writeToCache = false;
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IGWLogger<Glasswall.Platform.Web.HttpClient.HttpClient>>();
-            var logger = new Mock<IGWLogger<TokenManager>>();
+            var httplogger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
