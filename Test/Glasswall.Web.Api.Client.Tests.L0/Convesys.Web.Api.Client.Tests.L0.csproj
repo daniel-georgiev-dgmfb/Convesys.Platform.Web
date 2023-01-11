@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
-    <ProjectReference Include="..\..\Source\Glasswall.Web.Api.Client\Convesys.Platform.Web.Api.Client.csproj" />
+    <ProjectReference Include="..\..\Source\Convesys.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
+    <ProjectReference Include="..\..\Source\Convesys.Web.Api.Client\Convesys.Platform.Web.Api.Client.csproj" />
   </ItemGroup>
 
 </Project>

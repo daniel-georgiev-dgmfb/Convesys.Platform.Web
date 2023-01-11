@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
+    <ProjectReference Include="..\..\Source\Convesys.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
   </ItemGroup>
 
 </Project>

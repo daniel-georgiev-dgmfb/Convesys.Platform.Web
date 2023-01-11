@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F7C20CB5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{56928703-7A8D-47D9-B4FF-BFA52CB151C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Tokens", "Source\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj", "{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Tokens", "Source\Convesys.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj", "{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.HttpClient", "Source\Glasswall.HttpClient\Convesys.Platform.Web.HttpClient.csproj", "{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.HttpClient", "Source\Convesys.HttpClient\Convesys.Platform.Web.HttpClient.csproj", "{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Api.Client", "Source\Glasswall.Web.Api.Client\Convesys.Platform.Web.Api.Client.csproj", "{43711F39-4C86-4416-B503-DB877D898CF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Api.Client", "Source\Convesys.Web.Api.Client\Convesys.Platform.Web.Api.Client.csproj", "{43711F39-4C86-4416-B503-DB877D898CF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.HttpClient.Tests.L0", "Test\Glasswall.HttpClient.Tests.L0\Convesys.HttpClient.Tests.L0.csproj", "{F2382AD3-F3F9-496A-B421-5797C7C3C940}"
 EndProject
@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Web.Api.Client.Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Authorisation.Tokens.Tests.L0", "Test\Glasswall.Authorisation.Tokens.Tests.L0\Convesys.Authorisation.Tokens.Tests.L0.csproj", "{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Middleware", "Source\Glasswall.Platform.Web.Middleware\Convesys.Platform.Web.Middleware.csproj", "{4900CEE7-E89A-4703-9D22-F721A04F8A6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Middleware", "Source\Convesys.Platform.Web.Middleware\Convesys.Platform.Web.Middleware.csproj", "{4900CEE7-E89A-4703-9D22-F721A04F8A6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
