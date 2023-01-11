@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Convesys.Kernel.Web" Version="1.0.0" />
+    <PackageReference Include="Convesys.Platform.Cryptography" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Convesys.Kernel.Logging">
+      <HintPath>..\..\..\Convesys.Platform.Kernel\Convesys.Kernel.Logging\bin\Debug\net6.0\Convesys.Kernel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Convesys.Providers.Logging.Microsoft">
+      <HintPath>..\..\..\Convesys.Platform.Providers\Convesys.Providers.Logging.Microsoft\bin\Debug\net6.0\Convesys.Providers.Logging.Microsoft.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Http client with bear authentication</Description>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Convesys.Kernel" Version="1.0.0" />
+    <PackageReference Include="Convesys.Kernel.Caching" Version="1.0.0" />
+    <PackageReference Include="Convesys.Kernel.Logging" Version="1.0.0" />
+    <PackageReference Include="Convesys.Kernel.Web" Version="1.0.0" />
+    <PackageReference Include="Convesys.Platform.Web.HttpClient" Version="1.0.0" />
+    <PackageReference Include="Convesys.Providers.MemoryCache" Version="1.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
+  </ItemGroup>
+
+</Project>

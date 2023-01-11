@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Convesys.Platform.Cryptography" Version="1.0.0" />
+    <PackageReference Include="Convesys.Providers.Logging.Microsoft" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0-preview-20180807-05" />
+    <PackageReference Include="Moq" Version="4.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="NUnit" Version="3.10.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\Glasswall.HttpClient\Convesys.Platform.Web.HttpClient.csproj" />
+  </ItemGroup>
+
+</Project>

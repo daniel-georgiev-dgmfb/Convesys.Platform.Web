@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F7C20CB5-BD30-45AB-96FC-2E7DE69C858C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{56928703-7A8D-47D9-B4FF-BFA52CB151C3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Tokens", "Source\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj", "{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.HttpClient", "Source\Glasswall.HttpClient\Convesys.Platform.Web.HttpClient.csproj", "{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Api.Client", "Source\Glasswall.Web.Api.Client\Convesys.Platform.Web.Api.Client.csproj", "{43711F39-4C86-4416-B503-DB877D898CF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.HttpClient.Tests.L0", "Test\Glasswall.HttpClient.Tests.L0\Convesys.HttpClient.Tests.L0.csproj", "{F2382AD3-F3F9-496A-B421-5797C7C3C940}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Authorisation.Tokens.Tests.L1", "Test\Glasswall.Authorisation.Tokens.Tests.L1\Convesys.Authorisation.Tokens.Tests.L1.csproj", "{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Web.Api.Client.Tests.L0", "Test\Glasswall.Web.Api.Client.Tests.L0\Convesys.Web.Api.Client.Tests.L0.csproj", "{D6311908-26AA-48FE-B17B-1292BF674AD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Authorisation.Tokens.Tests.L0", "Test\Glasswall.Authorisation.Tokens.Tests.L0\Convesys.Authorisation.Tokens.Tests.L0.csproj", "{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Convesys.Platform.Web.Middleware", "Source\Glasswall.Platform.Web.Middleware\Convesys.Platform.Web.Middleware.csproj", "{4900CEE7-E89A-4703-9D22-F721A04F8A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43711F39-4C86-4416-B503-DB877D898CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43711F39-4C86-4416-B503-DB877D898CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43711F39-4C86-4416-B503-DB877D898CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43711F39-4C86-4416-B503-DB877D898CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2382AD3-F3F9-496A-B421-5797C7C3C940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2382AD3-F3F9-496A-B421-5797C7C3C940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2382AD3-F3F9-496A-B421-5797C7C3C940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2382AD3-F3F9-496A-B421-5797C7C3C940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6311908-26AA-48FE-B17B-1292BF674AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6311908-26AA-48FE-B17B-1292BF674AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6311908-26AA-48FE-B17B-1292BF674AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6311908-26AA-48FE-B17B-1292BF674AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4900CEE7-E89A-4703-9D22-F721A04F8A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4900CEE7-E89A-4703-9D22-F721A04F8A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4900CEE7-E89A-4703-9D22-F721A04F8A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4900CEE7-E89A-4703-9D22-F721A04F8A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B845EBC9-1BF8-4DCB-9A31-23E6442C79EC} = {56928703-7A8D-47D9-B4FF-BFA52CB151C3}
+		{3712DBA5-BD46-462D-A80C-B71E6C4C8DE3} = {56928703-7A8D-47D9-B4FF-BFA52CB151C3}
+		{43711F39-4C86-4416-B503-DB877D898CF3} = {56928703-7A8D-47D9-B4FF-BFA52CB151C3}
+		{F2382AD3-F3F9-496A-B421-5797C7C3C940} = {F7C20CB5-BD30-45AB-96FC-2E7DE69C858C}
+		{0EC9F75B-C9AA-4306-B600-EC5AFBD0C084} = {F7C20CB5-BD30-45AB-96FC-2E7DE69C858C}
+		{D6311908-26AA-48FE-B17B-1292BF674AD4} = {F7C20CB5-BD30-45AB-96FC-2E7DE69C858C}
+		{449AE1ED-6FC0-4772-A10F-B5D1DFC59AB6} = {F7C20CB5-BD30-45AB-96FC-2E7DE69C858C}
+		{4900CEE7-E89A-4703-9D22-F721A04F8A6D} = {56928703-7A8D-47D9-B4FF-BFA52CB151C3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF959B4C-5D95-4B3A-B986-8C619DADF462}
+	EndGlobalSection
+EndGlobal
