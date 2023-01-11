@@ -1,8 +1,6 @@
 using Convesys.HttpClient.Tests.L0.MockData;
-using Convesys.Kernel.Configuration;
 using Convesys.Kernel.Logging;
 using Convesys.Kernel.Security.Validation;
-using Convesys.Kernel.Web;
 using Moq;
 using NUnit.Framework;
 using System;

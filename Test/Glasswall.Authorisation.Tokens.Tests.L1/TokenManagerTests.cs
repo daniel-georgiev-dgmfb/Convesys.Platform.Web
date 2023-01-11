@@ -1,5 +1,11 @@
+using Convesys.Common.Serialisation.JSON;
+using Convesys.Common.Serialisation.JSON.SettingsProviders;
+using Convesys.Kernel.Logging;
+using Convesys.Kernel.Security.Validation;
+using Convesys.Kernel.Web.Authorisation;
 using Convesys.Platform.Web.Tokens;
 using Convesys.Platform.Web.Tokens.Contexts;
+using Moq;
 using NUnit.Framework;
 using System;
 using System.Net.Security;
@@ -18,8 +24,8 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
         {
             //ARRANGE
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IGWLogger<Glasswall.Platform.Web.HttpClient.HttpClient>>();
-            var logger = new Mock<IGWLogger<TokenManager>>();
+            var httplogger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
@@ -27,7 +33,7 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
-            var httpClient = new Glasswall.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
+            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
             var tokenManager = new TokenManager(httpClient, cache, parser, logger.Object);
             var context = new ResoureOwnerTokenContext("john.doe@domain.com", "Password_1", new Kernel.Web.Endpoint(uri.AbsoluteUri));
             var foo = new System.Net.Http.HttpClient();
@@ -43,8 +49,8 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
         {
             //ARRANGE
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IGWLogger<Glasswall.Platform.Web.HttpClient.HttpClient>>();
-            var logger = new Mock<IGWLogger<TokenManager>>();
+            var httplogger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
@@ -52,7 +58,7 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
-            var httpClient = new Glasswall.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
+            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
             var tokenManager = new TokenManager(httpClient, cache, parser, logger.Object);
             var context = new ResoureOwnerTokenContext("john.doe@domain.com", "Password1", new Kernel.Web.Endpoint(uri.AbsoluteUri));
             var foo = new System.Net.Http.HttpClient();
@@ -88,7 +94,7 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
-            var httpClient = new Glasswall.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
+            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
             var tokenManager = new TokenManager(httpClient, cache, parser, logger.Object);
             var context = new ClientSecretTokenContext("service", "Glasswall", new Kernel.Web.Endpoint(uri.AbsoluteUri));
             var foo = new System.Net.Http.HttpClient();
@@ -108,8 +114,8 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var readFromCache = false;
             var writeToCache = false;
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IGWLogger<Glasswall.Platform.Web.HttpClient.HttpClient>>();
-            var logger = new Mock<IGWLogger<TokenManager>>();
+            var httplogger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
@@ -126,7 +132,7 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
-            var httpClient = new Glasswall.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
+            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
             var tokenManager = new TokenManager(httpClient, cache, parser, logger.Object);
             var context = new ResoureOwnerTokenContext("john.doe@domain.com", "Password_1", new Kernel.Web.Endpoint(uri.AbsoluteUri));
             var foo = new System.Net.Http.HttpClient();
@@ -150,8 +156,8 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var readFromCache = false;
             var writeToCache = false;
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IGWLogger<Glasswall.Platform.Web.HttpClient.HttpClient>>();
-            var logger = new Mock<IGWLogger<TokenManager>>();
+            var httplogger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
@@ -168,7 +174,7 @@ namespace Convesys.Authorisation.Tokens.Tests.L1
             var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
-            var httpClient = new Glasswall.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
+            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);
             var tokenManager = new TokenManager(httpClient, cache, parser, logger.Object);
             var context = new ResoureOwnerTokenContext("john.doe@domain.com", "Password1", new Kernel.Web.Endpoint(uri.AbsoluteUri));
             var foo = new System.Net.Http.HttpClient();

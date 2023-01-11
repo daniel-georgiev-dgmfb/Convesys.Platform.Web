@@ -18,7 +18,7 @@ using System.Threading.Tasks;
 namespace Convesys.HttpClient.Tests.L0
 {
     [TestFixture]
-    [Category("Glasswall.HttpClient.Tests.L0")]
+    [Category("Convesys.HttpClient.Tests.L0")]
     public class HttpClientPutTests
     {
         [Test]

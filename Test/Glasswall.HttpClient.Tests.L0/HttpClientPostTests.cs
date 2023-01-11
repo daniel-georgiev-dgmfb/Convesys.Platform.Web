@@ -1,27 +1,16 @@
 using Convesys.HttpClient.Tests.L0.MockData;
-using Convesys.Kernel.Configuration;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Security.Validation;
 using Convesys.Kernel.Web;
-using Convesys.Platform.Cryptography.Certificates.Backchannel.Validation;
 using Convesys.Platform.Web.HttpClient;
-using Moq;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Net;
-using System.Net.Http;
-using System.Net.Security;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Text.Json.Nodes;
 using System.Linq;
+using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Convesys.Providers.Logging.Microsoft;
-using Microsoft.Extensions.Logging;
 
 namespace Convesys.HttpClient.Tests.L0
 {

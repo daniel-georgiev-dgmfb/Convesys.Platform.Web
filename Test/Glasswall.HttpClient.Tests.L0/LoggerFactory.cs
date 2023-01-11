@@ -2,21 +2,21 @@
 
 namespace Convesys.HttpClient.Tests.L0
 {
-    //internal class LoggerFactory : ILoggerFactory
-    //{
-    //    public void AddProvider(ILoggerProvider provider)
-    //    {
-            
-    //    }
+    internal class LoggerFactory : ILoggerFactory
+    {
+        public void AddProvider(ILoggerProvider provider)
+        {
 
-    //    public ILogger CreateLogger(string categoryName)
-    //    {
-    //        return new Logger();
-    //    }
+        }
 
-    //    public void Dispose()
-    //    {
-            
-    //    }
-    //}
+        public ILogger CreateLogger(string categoryName)
+        {
+            return new Logger();
+        }
+
+        public void Dispose()
+        {
+
+        }
+    }
 }

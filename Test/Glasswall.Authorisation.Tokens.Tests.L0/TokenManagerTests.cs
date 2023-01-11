@@ -12,10 +12,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Glasswall.Authorisation.Tokens.Tests.L0
+namespace Convesys.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Glasswall.Authorisation.Tokens.Tests.L0")]
+    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
     internal class TokenManagerTests
     {
         [Test]
@@ -301,10 +301,9 @@ namespace Glasswall.Authorisation.Tokens.Tests.L0
                 .Returns(Task.FromResult(httpResponseMessage));
 
             var cacheProvider = new MemoryCacheRuntimeImplementor();
-            cacheProvider.ReadFrom += new EventHandler((_, ev) => 
+            cacheProvider.ReadFrom += new EventHandler((_, cacheEvent) => 
             {
-                var cacheEvent = ev as CacheEvent;
-                if (cacheEvent == null || cacheEvent.Entry == null)
+                if (cacheEvent == null)
                     return;
 
                 readFromCache = true;
