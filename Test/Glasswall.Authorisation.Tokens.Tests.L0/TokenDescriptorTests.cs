@@ -1,11 +1,11 @@
 using System;
-using Glasswall.Kernel.Web.Authorisation;
+using Convesys.Kernel.Web.Authorisation;
 using NUnit.Framework;
 
-namespace Glasswall.Authorisation.Tokens.Tests.L0
+namespace Convesys.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Glasswall.Authorisation.Tokens.Tests.L0")]
+    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
     public class TokenDescriptorTests
     {
         [Test]

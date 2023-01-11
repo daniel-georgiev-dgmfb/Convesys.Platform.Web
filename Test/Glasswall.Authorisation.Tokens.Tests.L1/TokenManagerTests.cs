@@ -1,15 +1,16 @@
 using Convesys.Platform.Web.Tokens;
 using Convesys.Platform.Web.Tokens.Contexts;
+using NUnit.Framework;
 using System;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Glasswall.Authorisation.Tokens.Tests.L1
+namespace Convesys.Authorisation.Tokens.Tests.L1
 {
     [TestFixture]
-    [Category("Glasswall.Authorisation.Tokens.Tests.L1")]
+    [Category("Convesys.Authorisation.Tokens.Tests.L1")]
     public class TokenManagerTests
     {
         [Test]

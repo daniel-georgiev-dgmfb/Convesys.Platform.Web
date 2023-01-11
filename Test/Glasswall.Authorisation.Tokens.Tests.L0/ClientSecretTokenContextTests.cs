@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Net.Http;
 using System.Text;
-using Glasswall.Kernel.Web;
-using Glasswall.Platform.Web.Tokens.Contexts;
+using Convesys.Kernel.Web;
+using Convesys.Platform.Web.Tokens.Contexts;
 using Kernel.Cryptography.DataProtection;
 using Moq;
 using NUnit.Framework;
