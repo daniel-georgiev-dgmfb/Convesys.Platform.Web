@@ -14,6 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="desktop.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Convesys.Common.Serialisation.JSON" Version="1.0.0" />
     <PackageReference Include="Convesys.Kernel.Caching" Version="1.0.0" />
     <PackageReference Include="Convesys.Kernel.Logging" Version="1.0.0" />

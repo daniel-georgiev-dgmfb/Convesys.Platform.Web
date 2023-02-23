@@ -14,6 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="desktop.ini" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Convesys.Platform.Cryptography" Version="1.0.0" />
     <PackageReference Include="Convesys.Providers.Logging.Microsoft" Version="1.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0-preview-20180807-05" />

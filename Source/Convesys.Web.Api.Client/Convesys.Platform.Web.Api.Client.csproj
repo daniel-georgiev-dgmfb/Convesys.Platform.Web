@@ -16,17 +16,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Convesys.Kernel" Version="1.0.0" />
-    <PackageReference Include="Convesys.Kernel.Caching" Version="1.0.0" />
-    <PackageReference Include="Convesys.Kernel.Logging" Version="1.0.0" />
-    <PackageReference Include="Convesys.Kernel.Web" Version="1.0.0" />
-    <PackageReference Include="Convesys.Platform.Web.HttpClient" Version="1.0.0" />
-    <PackageReference Include="Convesys.Providers.MemoryCache" Version="1.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <None Remove="desktop.ini" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Glasswall.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
   </ItemGroup>
 
 </Project>
