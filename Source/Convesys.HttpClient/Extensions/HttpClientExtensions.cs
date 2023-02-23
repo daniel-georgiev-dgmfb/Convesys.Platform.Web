@@ -1,8 +1,8 @@
 ﻿using System;
-using Convesys.Kernel.DependencyResolver;
-using Convesys.Kernel.Web;
+using Twiligth.Kernel.DependencyResolver;
+using Twiligth.Kernel.Web;
 
-namespace Convesys.Platform.Web.HttpClient.Extensions
+namespace Twiligth.Platform.Web.HttpClient.Extensions
 {
     public static class HttpClientExtensions
     {

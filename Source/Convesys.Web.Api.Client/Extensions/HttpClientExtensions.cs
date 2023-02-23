@@ -1,17 +1,17 @@
 ﻿//using System.Net.Http;
-using Convesys.Common.Serialisation.JSON;
-using Convesys.Common.Serialisation.JSON.SettingsProviders;
-using Convesys.Kernel.Caching;
-using Convesys.Kernel.DependencyResolver;
-using Convesys.Kernel.Serialisation;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
-using Convesys.MemoryCacheProvider;
-using Convesys.Platform.Web.Tokens;
+using Twiligth.Common.Serialisation.JSON;
+using Twiligth.Common.Serialisation.JSON.SettingsProviders;
+using Twiligth.Kernel.Caching;
+using Twiligth.Kernel.DependencyResolver;
+using Twiligth.Kernel.Serialisation;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
+using Twiligth.MemoryCacheProvider;
+using Twiligth.Platform.Web.Tokens;
 using Newtonsoft.Json;
 using System;
 
-namespace Convesys.Platform.Web.Api.Client.Extensions
+namespace Twiligth.Platform.Web.Api.Client.Extensions
 {
     public static class HttpClientExtensions
     {

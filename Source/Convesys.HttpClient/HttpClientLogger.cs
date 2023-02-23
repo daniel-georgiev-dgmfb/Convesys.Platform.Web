@@ -1,13 +1,13 @@
-﻿using Convesys.Kernel.Logging;
+﻿using Twiligth.Kernel.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.HttpClient
+namespace Twiligth.Platform.Web.HttpClient
 {
-    public class HttpClientLogger : IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>
+    public class HttpClientLogger : IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>
     {
         public void Log<TState>(SeverityLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
@@ -35,7 +35,7 @@ namespace Convesys.Platform.Web.HttpClient
         }
     }
 
-    public class BackchanelLogger : IEventLogger<Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator>
+    public class BackchanelLogger : IEventLogger<Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator>
     {
         public void Log<TState>(SeverityLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {

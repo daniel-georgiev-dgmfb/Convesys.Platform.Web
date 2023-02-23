@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Net.Http;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
 
-namespace Convesys.Platform.Web.Api.Client
+namespace Twiligth.Platform.Web.Api.Client
 {
     public class RequestContext
     {

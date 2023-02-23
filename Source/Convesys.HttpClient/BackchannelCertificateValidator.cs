@@ -1,7 +1,7 @@
-﻿using Convesys.Kernel.Logging;
-using Convesys.Kernel.Security.Validation;
-using Convesys.Kernel.Web;
-using Convesys.Platform.Cryptography.Certificates.Backchannel.Validation;
+﻿using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Security.Validation;
+using Twiligth.Kernel.Web;
+using Twiligth.Platform.Cryptography.Certificates.Backchannel.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.HttpClient
+namespace Twiligth.Platform.Web.HttpClient
 {
     /// <summary>
     /// Backchannel certificate validator. Validates remote certificate for https.

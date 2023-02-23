@@ -1,14 +1,14 @@
-﻿using Convesys.Kernel.Configuration;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
+﻿using Twiligth.Kernel.Configuration;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.Api.Client
+namespace Twiligth.Platform.Web.Api.Client
 {
     public class ApiClient : IApiClient
     {

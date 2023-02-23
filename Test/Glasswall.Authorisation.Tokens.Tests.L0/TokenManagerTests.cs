@@ -1,9 +1,9 @@
-﻿using Convesys.Kernel.Caching;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
-using Convesys.MemoryCacheProvider;
-using Convesys.Platform.Web.Tokens;
+﻿using Twiligth.Kernel.Caching;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
+using Twiligth.MemoryCacheProvider;
+using Twiligth.Platform.Web.Tokens;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -12,10 +12,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.Authorisation.Tokens.Tests.L0
+namespace Twiligth.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
+    [Category("Twiligth.Authorisation.Tokens.Tests.L0")]
     internal class TokenManagerTests
     {
         [Test]

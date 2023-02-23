@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace Convesys.Platform.Web.Middleware
+namespace Twiligth.Platform.Web.Middleware
 {
     public class JsonExceptionMiddleware
     {

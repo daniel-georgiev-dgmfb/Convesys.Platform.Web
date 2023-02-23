@@ -17,15 +17,4 @@
     <None Remove="desktop.ini" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Convesys.Kernel.Web" Version="1.0.0" />
-    <PackageReference Include="Convesys.Platform.Cryptography" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Convesys.Kernel.Logging">
-      <HintPath>..\..\..\Convesys.Platform.Kernel\Convesys.Kernel.Logging\bin\Debug\net6.0\Convesys.Kernel.Logging.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

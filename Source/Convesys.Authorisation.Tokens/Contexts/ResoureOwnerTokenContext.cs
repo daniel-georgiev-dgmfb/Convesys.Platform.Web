@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
 using Kernel.Cryptography.DataProtection;
 
-namespace Convesys.Platform.Web.Tokens.Contexts
+namespace Twiligth.Platform.Web.Tokens.Contexts
 {
     public class ResoureOwnerTokenContext : IBearerTokenContext
     {

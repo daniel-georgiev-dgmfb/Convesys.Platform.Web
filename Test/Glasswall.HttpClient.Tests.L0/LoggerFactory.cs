@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Convesys.HttpClient.Tests.L0
+namespace Twiligth.HttpClient.Tests.L0
 {
     internal class LoggerFactory : ILoggerFactory
     {

@@ -1,9 +1,9 @@
-﻿using Convesys.Kernel.Serialisation;
-using Convesys.Kernel.Web.Authorisation;
+﻿using Twiligth.Kernel.Serialisation;
+using Twiligth.Kernel.Web.Authorisation;
 using System;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.Tokens
+namespace Twiligth.Platform.Web.Tokens
 {
     public class BearerTokenParser : IBearerTokenParser
     {

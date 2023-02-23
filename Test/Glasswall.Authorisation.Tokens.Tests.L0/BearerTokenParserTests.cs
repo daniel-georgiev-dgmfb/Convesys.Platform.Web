@@ -1,14 +1,14 @@
-﻿using Convesys.Common.Serialisation.JSON;
-using Convesys.Common.Serialisation.JSON.SettingsProviders;
-using Convesys.Platform.Web.Tokens;
+﻿using Twiligth.Common.Serialisation.JSON;
+using Twiligth.Common.Serialisation.JSON.SettingsProviders;
+using Twiligth.Platform.Web.Tokens;
 using NUnit.Framework;
 using System;
 using System.Threading.Tasks;
 
-namespace Convesys.Authorisation.Tokens.Tests.L0
+namespace Twiligth.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
+    [Category("Twiligth.Authorisation.Tokens.Tests.L0")]
     public class BearerTokenParserTests
     {
         [Test]

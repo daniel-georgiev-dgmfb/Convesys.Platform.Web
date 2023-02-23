@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Net.Http;
 using System.Text;
-using Convesys.Kernel.Web;
-using Convesys.Platform.Web.Tokens.Contexts;
+using Twiligth.Kernel.Web;
+using Twiligth.Platform.Web.Tokens.Contexts;
 using Kernel.Cryptography.DataProtection;
 using Moq;
 using NUnit.Framework;
 
-namespace Convesys.Authorisation.Tokens.Tests.L0
+namespace Twiligth.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
+    [Category("Twiligth.Authorisation.Tokens.Tests.L0")]
     public class ClientSecretTokenContextTests
     {
         [Test]

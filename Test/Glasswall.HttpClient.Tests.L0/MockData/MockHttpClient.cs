@@ -1,16 +1,16 @@
-﻿using Convesys.Kernel.Logging;
-using Convesys.Kernel.Security.Validation;
+﻿using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Security.Validation;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Convesys.HttpClient.Tests.L0.MockData
+namespace Twiligth.HttpClient.Tests.L0.MockData
 {
-    internal class MockHttpClient : Convesys.Platform.Web.HttpClient.HttpClient
+    internal class MockHttpClient : Twiligth.Platform.Web.HttpClient.HttpClient
     {
         private readonly Func<HttpRequestMessage, Task<HttpResponseMessage>> _onSend;
         //private readonly IBackchannelCertificateValidator _backchannelCertificateValidator;
-        public MockHttpClient(IBackchannelCertificateValidator backchannelCertificateValidator, Func<HttpRequestMessage, Task<HttpResponseMessage>> onSend, IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient> logger) : base(backchannelCertificateValidator, logger)
+        public MockHttpClient(IBackchannelCertificateValidator backchannelCertificateValidator, Func<HttpRequestMessage, Task<HttpResponseMessage>> onSend, IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient> logger) : base(backchannelCertificateValidator, logger)
         {
             this._onSend = onSend;
         }

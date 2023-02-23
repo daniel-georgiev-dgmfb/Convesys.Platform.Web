@@ -1,8 +1,8 @@
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
-using Convesys.Platform.Web.Api.Client;
-using Convesys.Platform.Web.Tokens.Contexts;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
+using Twiligth.Platform.Web.Api.Client;
+using Twiligth.Platform.Web.Tokens.Contexts;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace Glasswall.Web.Api.Client.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.Web.Api.Client.Tests.L0")]
+    [Category("Twiligth.Web.Api.Client.Tests.L0")]
     public class ApiClientTests
     {
         [Test]

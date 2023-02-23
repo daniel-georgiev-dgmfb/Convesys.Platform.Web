@@ -1,6 +1,6 @@
-using Convesys.HttpClient.Tests.L0.MockData;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Security.Validation;
+using Twiligth.HttpClient.Tests.L0.MockData;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Security.Validation;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -13,10 +13,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.HttpClient.Tests.L0
+namespace Twiligth.HttpClient.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.HttpClient.Tests.L0")]
+    [Category("Twiligth.HttpClient.Tests.L0")]
     public class HttpClientGetTests
     {
         [Test]
@@ -24,10 +24,10 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             var url = "http://localhost/";
             //ACT
-            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
+            var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
             //ASSERT
             Assert.ThrowsAsync<ArgumentException>(() => httpClient.GetAsync(url, CancellationToken.None));
         }
@@ -37,10 +37,10 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             var url = String.Empty;
             //ACT
-            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
+            var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
             //ASSERT
             Assert.ThrowsAsync<ArgumentNullException>(() => httpClient.GetAsync(url, CancellationToken.None));
         }
@@ -50,10 +50,10 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             var url = (string)null;
             //ACT
-            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
+            var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(backchannelValidator.Object, logger.Object);
             //ASSERT
             Assert.ThrowsAsync<ArgumentNullException>(() => httpClient.GetAsync(url, CancellationToken.None));
         }
@@ -63,7 +63,7 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             backchannelValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
             var url = "http://localhost:4449/";
@@ -83,7 +83,7 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             backchannelValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
             var url = "https://localhost/";
@@ -101,7 +101,7 @@ namespace Convesys.HttpClient.Tests.L0
         {
             //ARRANGE
             var configuration = new ResourceRetrieverCustomConfigurator();
-            var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             var backchannelValidator = new Mock<IBackchannelCertificateValidator>();
             backchannelValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);

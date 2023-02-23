@@ -1,11 +1,11 @@
 using System;
-using Convesys.Kernel.Web.Authorisation;
+using Twiligth.Kernel.Web.Authorisation;
 using NUnit.Framework;
 
-namespace Convesys.Authorisation.Tokens.Tests.L0
+namespace Twiligth.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
-    [Category("Convesys.Authorisation.Tokens.Tests.L0")]
+    [Category("Twiligth.Authorisation.Tokens.Tests.L0")]
     public class TokenDescriptorTests
     {
         [Test]

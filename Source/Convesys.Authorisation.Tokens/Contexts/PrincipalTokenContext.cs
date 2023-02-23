@@ -3,10 +3,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Security.Claims;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
 
-namespace Convesys.Platform.Web.Tokens.Contexts
+namespace Twiligth.Platform.Web.Tokens.Contexts
 {
     public class PrincipalTokenContext : IBearerTokenContext
     {

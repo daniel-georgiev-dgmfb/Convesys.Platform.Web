@@ -1,6 +1,6 @@
-using Convesys.HttpClient.Tests.L0.MockData;
-using Convesys.Kernel.Web;
-using Convesys.Platform.Web.HttpClient;
+using Twiligth.HttpClient.Tests.L0.MockData;
+using Twiligth.Kernel.Web;
+using Twiligth.Platform.Web.HttpClient;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using NUnit.Framework;
@@ -12,7 +12,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.HttpClient.Tests.L0
+namespace Twiligth.HttpClient.Tests.L0
 {
     internal class Foo
     {
@@ -21,7 +21,7 @@ namespace Convesys.HttpClient.Tests.L0
     }
 
     [TestFixture]
-    [Category("Convesys.HttpClient.Tests.L0")]
+    [Category("Twiligth.HttpClient.Tests.L0")]
     public class HttpClientPostTests
     {
         [Test]
@@ -31,13 +31,13 @@ namespace Convesys.HttpClient.Tests.L0
             try
             {
                 var configuration = new ResourceRetrieverCustomConfigurator();
-                var configuration1 = new Convesys.Platform.Web.HttpClient.CertificateValidationConfigurationProvider();
-                var loggerValidator = new Providers.Logging.Microsoft.Logger<Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator>(new Logger());
-                //var loggerValidator = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator>>();
+                var configuration1 = new Twiligth.Platform.Web.HttpClient.CertificateValidationConfigurationProvider();
+                var loggerValidator = new Providers.Logging.Microsoft.Logger<Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator>(new Logger());
+                //var loggerValidator = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator>>();
                 ;
-                var httpLogger = new Providers.Logging.Microsoft.Logger<Convesys.Platform.Web.HttpClient.HttpClient>(new LoggerFactory());
-                //var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
-                var backchannelValidator = new Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator(configuration1, loggerValidator);
+                var httpLogger = new Providers.Logging.Microsoft.Logger<Twiligth.Platform.Web.HttpClient.HttpClient>(new LoggerFactory());
+                //var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
+                var backchannelValidator = new Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator(configuration1, loggerValidator);
 
                 //var url = "http://localhost:4449/stats/tests/kstest";
                 var url = "https://localhost:44331/api/Stats";
@@ -45,7 +45,7 @@ namespace Convesys.HttpClient.Tests.L0
                 //var message = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,100,101,101";
                 var message = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,100,101,101";
 
-                var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(backchannelValidator, httpLogger);
+                var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(backchannelValidator, httpLogger);
                 httpClient.HttpDocumentRetrieverConfigurator = configuration;
                 httpClient.RequireHttps = false;
                 //ACT
@@ -85,17 +85,17 @@ namespace Convesys.HttpClient.Tests.L0
             //ARRANGE
             var configuration = new ResourceRetrieverCustomConfigurator();
             var configuration1 = new CertificateValidationConfigurationProvider();
-            //var loggerValidator = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator>>();
-            //var logger = new Mock<IEventLogger<Convesys.Platform.Web.HttpClient.HttpClient>>();
+            //var loggerValidator = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator>>();
+            //var logger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
             var logger = new HttpClientLogger();
             var validatorLogger = new BackchanelLogger();
-            var backchannelValidator = new Convesys.Platform.Web.HttpClient.BackchannelCertificateValidator(configuration1, validatorLogger);
+            var backchannelValidator = new Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator(configuration1, validatorLogger);
 
             var url = "http://localhost:4449/stats/funcs/mode";
 
             var message = "1,2,3,4,5,6,7,8,9,10,10,10,11,12,13,14,15,16,17,18,19,20,21,100,101,101";
             var message1 = "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,101,101,101,101,101,101,101,101,101,101,101,101,101,101,102,102,102,102,102,102,102,102,102,102,102,102,102,102,102";
-            var httpClient = new Convesys.Platform.Web.HttpClient.HttpClient(backchannelValidator, logger);
+            var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(backchannelValidator, logger);
             httpClient.HttpDocumentRetrieverConfigurator = configuration;
             httpClient.RequireHttps = false;
             //ACT

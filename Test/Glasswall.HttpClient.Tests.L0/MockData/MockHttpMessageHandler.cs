@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.HttpClient.Tests.L0.MockData
+namespace Twiligth.HttpClient.Tests.L0.MockData
 {
     internal class MockHttpMessageHandler : HttpClientHandler
     {

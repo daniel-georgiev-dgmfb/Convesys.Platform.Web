@@ -1,7 +1,7 @@
-﻿using Convesys.Kernel.Configuration;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Security.Validation;
-using Convesys.Kernel.Web;
+﻿using Twiligth.Kernel.Configuration;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Security.Validation;
+using Twiligth.Kernel.Web;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.HttpClient
+namespace Twiligth.Platform.Web.HttpClient
 {
     public class HttpClient : IHttpResourceRetriever
     {

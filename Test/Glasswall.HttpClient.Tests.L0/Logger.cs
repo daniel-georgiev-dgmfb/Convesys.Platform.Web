@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Convesys.HttpClient.Tests.L0
+namespace Twiligth.HttpClient.Tests.L0
 {
     internal class Logger : ILogger, ILoggerFactory, IDisposable
     {

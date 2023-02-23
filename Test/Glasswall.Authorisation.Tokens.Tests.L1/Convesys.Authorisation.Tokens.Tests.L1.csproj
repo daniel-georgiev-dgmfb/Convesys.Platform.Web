@@ -24,8 +24,4 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Source\Convesys.Authorisation.Tokens\Convesys.Platform.Web.Tokens.csproj" />
-  </ItemGroup>
-
 </Project>

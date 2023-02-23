@@ -1,13 +1,13 @@
-﻿using Convesys.Kernel.Caching;
-using Convesys.Kernel.Logging;
-using Convesys.Kernel.Web;
-using Convesys.Kernel.Web.Authorisation;
+﻿using Twiligth.Kernel.Caching;
+using Twiligth.Kernel.Logging;
+using Twiligth.Kernel.Web;
+using Twiligth.Kernel.Web.Authorisation;
 using System;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.Tokens
+namespace Twiligth.Platform.Web.Tokens
 {
     public class TokenManager : IBearerTokenManager
     {

@@ -1,8 +1,8 @@
-﻿using Convesys.Kernel.Caching;
-using Convesys.Kernel.Web.Authorisation;
+﻿using Twiligth.Kernel.Caching;
+using Twiligth.Kernel.Web.Authorisation;
 using System;
 
-namespace Convesys.Platform.Web.Tokens
+namespace Twiligth.Platform.Web.Tokens
 {
     public class TokenCachePolicy : ICacheEntryOptions
     {

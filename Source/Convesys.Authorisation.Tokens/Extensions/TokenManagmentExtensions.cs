@@ -1,8 +1,8 @@
 ﻿using System;
-using Convesys.Kernel.DependencyResolver;
-using Convesys.Kernel.Web.Authorisation;
+using Twiligth.Kernel.DependencyResolver;
+using Twiligth.Kernel.Web.Authorisation;
 
-namespace Convesys.Platform.Web.Tokens.Extensions
+namespace Twiligth.Platform.Web.Tokens.Extensions
 {
     public static class TokenManagmentExtensions
     {

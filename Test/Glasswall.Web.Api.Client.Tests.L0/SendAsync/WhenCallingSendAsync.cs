@@ -4,7 +4,7 @@
 //   </copyright>
 //  ----------------------------------------------------------------------- 
 
-namespace Convesys.Web.Api.Client.Tests.L0.SendAsync
+namespace Twiligth.Web.Api.Client.Tests.L0.SendAsync
 {
     using System;
     using System.Net.Http.Headers;
@@ -18,7 +18,7 @@ namespace Convesys.Web.Api.Client.Tests.L0.SendAsync
     using Platform.Web.Api.Client;
 
     [TestFixture]
-    [Category("Convesys.Platform.Web.Api.Client")]
+    [Category("Twiligth.Platform.Web.Api.Client")]
     public class WhenCallingSendAsync
     {
         private Mock<IBearerTokenManager> _tokenManager;

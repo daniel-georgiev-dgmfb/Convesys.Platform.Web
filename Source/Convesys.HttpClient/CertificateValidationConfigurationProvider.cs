@@ -1,12 +1,12 @@
-﻿using Convesys.Kernel.Security.Configuration;
-using Convesys.Kernel.Security.Validation;
+﻿using Twiligth.Kernel.Security.Configuration;
+using Twiligth.Kernel.Security.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Convesys.Platform.Web.HttpClient
+namespace Twiligth.Platform.Web.HttpClient
 {
     public class CertificateValidationConfigurationProvider : ICertificateValidationConfigurationProvider
     {
