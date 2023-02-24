@@ -1,8 +1,4 @@
-﻿using Twiligth.Kernel.Configuration;
-using Twiligth.Kernel.Logging;
-using Twiligth.Kernel.Security.Validation;
-using Twiligth.Kernel.Web;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
@@ -11,6 +7,8 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Twilight.Kernel.Logging;
+using Twilight.Kernel.Security.Validation;
 
 namespace Twiligth.Platform.Web.HttpClient
 {

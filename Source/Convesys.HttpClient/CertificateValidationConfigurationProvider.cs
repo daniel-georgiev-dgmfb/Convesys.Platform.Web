@@ -1,10 +1,6 @@
-﻿using Twiligth.Kernel.Security.Configuration;
-using Twiligth.Kernel.Security.Validation;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Twilight.Kernel.Security.Configuration;
+using Twilight.Kernel.Security.Validation;
 
 namespace Twiligth.Platform.Web.HttpClient
 {

@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Twilight.Platform.Kernel.Logging" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Web" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

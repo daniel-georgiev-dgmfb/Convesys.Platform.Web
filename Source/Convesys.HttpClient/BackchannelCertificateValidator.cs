@@ -1,15 +1,10 @@
-﻿using Twiligth.Kernel.Logging;
-using Twiligth.Kernel.Security.Validation;
-using Twiligth.Kernel.Web;
-using Twiligth.Platform.Cryptography.Certificates.Backchannel.Validation;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Threading.Tasks;
+using Twilight.Kernel.Logging;
 
 namespace Twiligth.Platform.Web.HttpClient
 {

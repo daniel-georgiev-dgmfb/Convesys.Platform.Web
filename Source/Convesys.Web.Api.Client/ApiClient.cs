@@ -1,12 +1,13 @@
-﻿using Twiligth.Kernel.Configuration;
-using Twiligth.Kernel.Logging;
-using Twiligth.Kernel.Web;
-using Twiligth.Kernel.Web.Authorisation;
+﻿
 using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
+using Twilight.Kernel.Configuration;
+using Twilight.Kernel.Logging;
+using Twilight.Kernel.Web;
+using Twilight.Kernel.Web.Authorisation;
 
 namespace Twiligth.Platform.Web.Api.Client
 {
