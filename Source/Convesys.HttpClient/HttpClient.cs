@@ -7,8 +7,10 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Twilight.Kernel.Configuration;
 using Twilight.Kernel.Logging;
 using Twilight.Kernel.Security.Validation;
+using Twilight.Kernel.Web;
 
 namespace Twiligth.Platform.Web.HttpClient
 {

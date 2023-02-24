@@ -20,6 +20,7 @@
   <ItemGroup>
     <PackageReference Include="Twilight.Platform.Kernel.Logging" Version="1.0.0" />
     <PackageReference Include="Twilight.Platform.Kernel.Security" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Web" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
