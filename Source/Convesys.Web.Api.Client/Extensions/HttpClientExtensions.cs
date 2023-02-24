@@ -8,6 +8,7 @@ using Twilight.Kernel.DependencyResolver;
 using Twilight.Kernel.Serialisation;
 using Twilight.Kernel.Web;
 using Twilight.Kernel.Web.Authorisation;
+using Twilight.MemoryCacheProvider;
 using Twilight.Platform.Web.Api.Client;
 using Twilight.Platform.Web.Tokens;
 
