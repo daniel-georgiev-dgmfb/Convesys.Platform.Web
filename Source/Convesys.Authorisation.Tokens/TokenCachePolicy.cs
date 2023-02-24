@@ -1,8 +1,8 @@
-﻿using Twiligth.Kernel.Caching;
-using Twiligth.Kernel.Web.Authorisation;
-using System;
+﻿using System;
+using Twilight.Kernel.Caching;
+using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Tokens
+namespace Twilight.Platform.Web.Tokens
 {
     public class TokenCachePolicy : ICacheEntryOptions
     {

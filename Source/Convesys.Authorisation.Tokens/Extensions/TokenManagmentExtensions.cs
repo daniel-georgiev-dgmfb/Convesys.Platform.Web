@@ -1,8 +1,9 @@
 ﻿using System;
-using Twiligth.Kernel.DependencyResolver;
-using Twiligth.Kernel.Web.Authorisation;
+using Twilight.Kernel.DependencyResolver;
+using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Tokens.Extensions
+
+namespace Twilight.Platform.Web.Tokens.Extensions
 {
     public static class TokenManagmentExtensions
     {

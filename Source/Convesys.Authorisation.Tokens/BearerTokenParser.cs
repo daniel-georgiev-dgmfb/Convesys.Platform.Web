@@ -1,9 +1,9 @@
-﻿using Twiligth.Kernel.Serialisation;
-using Twiligth.Kernel.Web.Authorisation;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Twilight.Kernel.Serialisation;
+using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Tokens
+namespace Twilight.Platform.Web.Tokens
 {
     public class BearerTokenParser : IBearerTokenParser
     {

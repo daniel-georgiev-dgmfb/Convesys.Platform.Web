@@ -1,10 +1,3 @@
-using Twiligth.Common.Serialisation.JSON;
-using Twiligth.Common.Serialisation.JSON.SettingsProviders;
-using Twiligth.Kernel.Logging;
-using Twiligth.Kernel.Security.Validation;
-using Twiligth.Kernel.Web.Authorisation;
-using Twiligth.Platform.Web.Tokens;
-using Twiligth.Platform.Web.Tokens.Contexts;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -12,6 +5,14 @@ using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
+using Twilight.Common.Serialisation.JSON;
+using Twilight.Common.Serialisation.JSON.SettingsProviders;
+using Twilight.Kernel.Logging;
+using Twilight.Kernel.Security.Validation;
+using Twilight.Kernel.Web.Authorisation;
+using Twilight.Platform.Web.Tokens;
+using Twilight.Platform.Web.Tokens.Contexts;
+
 
 namespace Twiligth.Authorisation.Tokens.Tests.L1
 {
@@ -24,13 +25,13 @@ namespace Twiligth.Authorisation.Tokens.Tests.L1
         {
             //ARRANGE
             var uri = new Uri("https://cas.wotsits.filetrust.io/Connect/Token");
-            var httplogger = new Mock<IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>>();
+            var httplogger = new Mock<IEventLogger<Twilight.Platform.Web.HttpClient>>();
             var logger = new Mock<IEventLogger<TokenManager>>();
             var defaultSettingsProvider = new DefaultSettingsProvider();
             var jsonSerializer = new NSJsonSerializer(defaultSettingsProvider);
             var parser = new BearerTokenParser(jsonSerializer);
             var cache = new MemoryCacheRuntimeImplementor();
-            var sertificateValidator = new Mock<IBackchannelCertificateValidator>();
+            var sertificateValidator = new Mock<BackchannelCertificateValidator>();
             sertificateValidator.Setup(x => x.Validate(It.IsAny<object>(), It.IsAny<X509Certificate>(), It.IsAny<X509Chain>(), It.IsAny<SslPolicyErrors>()))
                 .Returns(true);
             var httpClient = new Twiligth.Platform.Web.HttpClient.HttpClient(sertificateValidator.Object, httplogger.Object);

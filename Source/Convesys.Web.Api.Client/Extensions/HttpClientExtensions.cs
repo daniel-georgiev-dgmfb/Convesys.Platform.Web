@@ -1,17 +1,17 @@
 ﻿//using System.Net.Http;
-using Twiligth.Common.Serialisation.JSON;
-using Twiligth.Common.Serialisation.JSON.SettingsProviders;
-using Twiligth.Kernel.Caching;
-using Twiligth.Kernel.DependencyResolver;
-using Twiligth.Kernel.Serialisation;
-using Twiligth.Kernel.Web;
-using Twiligth.Kernel.Web.Authorisation;
-using Twiligth.MemoryCacheProvider;
-using Twiligth.Platform.Web.Tokens;
 using Newtonsoft.Json;
 using System;
+using Twilight.Common.Serialisation.JSON;
+using Twilight.Common.Serialisation.JSON.SettingsProviders;
+using Twilight.Kernel.Caching;
+using Twilight.Kernel.DependencyResolver;
+using Twilight.Kernel.Serialisation;
+using Twilight.Kernel.Web;
+using Twilight.Kernel.Web.Authorisation;
+using Twilight.Platform.Web.Api.Client;
+using Twilight.Platform.Web.Tokens;
 
-namespace Twiligth.Platform.Web.Api.Client.Extensions
+namespace Twilight.Platform.Web.Api.Client.Extensions
 {
     public static class HttpClientExtensions
     {
@@ -23,8 +23,8 @@ namespace Twiligth.Platform.Web.Api.Client.Extensions
             if (!dependencyResolver.Contains< IApiClient, ApiClient>())
                 dependencyResolver.RegisterType<IApiClient, ApiClient>(Lifetime.Transient);
 
-            if (!dependencyResolver.Contains<IHttpResourceRetriever, HttpClient.HttpClient>())
-                dependencyResolver.RegisterType<IHttpResourceRetriever, HttpClient.HttpClient>(Lifetime.Transient);
+            if (!dependencyResolver.Contains<IHttpResourceRetriever, HttpClient>())
+                dependencyResolver.RegisterType<IHttpResourceRetriever, Twilight.Platform.Web.HttpClient>(Lifetime.Transient);
 
             if (!dependencyResolver.Contains<IBearerTokenParser, BearerTokenParser>())
                 dependencyResolver.RegisterType<IBearerTokenParser, BearerTokenParser>(Lifetime.Transient);

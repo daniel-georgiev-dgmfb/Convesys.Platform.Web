@@ -9,7 +9,7 @@ using Twilight.Kernel.Security.Validation;
 using Twilight.Kernel.Web;
 using Twilight.Platform.Cryptography.Certificates.Backchannel.Validation;
 
-namespace Twiligth.Platform.Web.HttpClient
+namespace Twilight.Platform.Web.HttpClient
 {
     /// <summary>
     /// Backchannel certificate validator. Validates remote certificate for https.

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Net.Http;
-using Twiligth.Kernel.Web;
-using Twiligth.Kernel.Web.Authorisation;
+using Twilight.Kernel.Web;
+using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Api.Client
+namespace Twilight.Platform.Web.Api.Client
 {
     public class RequestContext
     {

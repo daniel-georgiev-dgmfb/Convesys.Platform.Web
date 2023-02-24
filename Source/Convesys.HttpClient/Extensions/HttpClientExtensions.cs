@@ -1,8 +1,8 @@
 ﻿using System;
-using Twiligth.Kernel.DependencyResolver;
-using Twiligth.Kernel.Web;
+using Twilight.Kernel.DependencyResolver;
+using Twilight.Kernel.Web;
 
-namespace Twiligth.Platform.Web.HttpClient.Extensions
+namespace Twilight.Platform.Web.HttpClient.Extensions
 {
     public static class HttpClientExtensions
     {

@@ -1,18 +1,17 @@
-﻿using Twiligth.Kernel.Caching;
-using Twiligth.Kernel.Logging;
-using Twiligth.Kernel.Web;
-using Twiligth.Kernel.Web.Authorisation;
-using Twiligth.MemoryCacheProvider;
-using Twiligth.Platform.Web.Tokens;
-using Moq;
+﻿using Moq;
 using NUnit.Framework;
 using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Twilight.Kernel.Caching;
+using Twilight.Kernel.Logging;
+using Twilight.Kernel.Web;
+using Twilight.Kernel.Web.Authorisation;
+using Twilight.Platform.Web.Tokens;
 
-namespace Twiligth.Authorisation.Tokens.Tests.L0
+namespace Twilight.Authorisation.Tokens.Tests.L0
 {
     [TestFixture]
     [Category("Twiligth.Authorisation.Tokens.Tests.L0")]

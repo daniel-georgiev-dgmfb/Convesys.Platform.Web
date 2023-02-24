@@ -9,7 +9,7 @@ using Twilight.Kernel.Logging;
 using Twilight.Kernel.Web;
 using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Api.Client
+namespace Twilight.Platform.Web.Api.Client
 {
     public class ApiClient : IApiClient
     {

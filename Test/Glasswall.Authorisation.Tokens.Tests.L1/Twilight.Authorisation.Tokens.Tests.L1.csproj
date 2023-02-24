@@ -24,4 +24,9 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\Convesys.Authorisation.Tokens\Twilight.Platform.Web.Tokens.csproj" />
+    <ProjectReference Include="..\..\Source\Convesys.HttpClient\Twilight.Platform.Web.HttpClient.csproj" />
+  </ItemGroup>
+
 </Project>

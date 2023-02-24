@@ -2,7 +2,7 @@
 using Twilight.Kernel.Security.Configuration;
 using Twilight.Kernel.Security.Validation;
 
-namespace Twiligth.Platform.Web.HttpClient
+namespace Twilight.Platform.Web.HttpClient
 {
     public class CertificateValidationConfigurationProvider : ICertificateValidationConfigurationProvider
     {

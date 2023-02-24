@@ -12,7 +12,7 @@ using Twilight.Kernel.Logging;
 using Twilight.Kernel.Security.Validation;
 using Twilight.Kernel.Web;
 
-namespace Twiligth.Platform.Web.HttpClient
+namespace Twilight.Platform.Web.HttpClient
 {
     public class HttpClient : IHttpResourceRetriever
     {

@@ -1,11 +1,8 @@
-﻿using Twiligth.Kernel.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Threading.Tasks;
+using Twilight.Kernel.Logging;
 
-namespace Twiligth.Platform.Web.HttpClient
+namespace Twilight.Platform.Web.HttpClient
 {
     public class HttpClientLogger : IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>
     {

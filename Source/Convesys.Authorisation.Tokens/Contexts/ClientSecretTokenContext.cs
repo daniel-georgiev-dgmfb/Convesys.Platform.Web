@@ -1,13 +1,14 @@
-﻿using Twiligth.Kernel.Web;
-using Twiligth.Kernel.Web.Authorisation;
+﻿//using Kernel.Cryptography.DataProtection;
 using Kernel.Cryptography.DataProtection;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
+using Twilight.Kernel.Web;
+using Twilight.Kernel.Web.Authorisation;
 
-namespace Twiligth.Platform.Web.Tokens.Contexts
+namespace Twilight.Platform.Web.Tokens.Contexts
 {
     public class ClientSecretTokenContext : IBearerTokenContext
     {

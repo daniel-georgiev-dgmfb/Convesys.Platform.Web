@@ -17,4 +17,12 @@
     <None Remove="desktop.ini" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Twilight.Platform.Common.Serialisation.JSON" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Caching" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Cryptography" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Logging" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Kernel.Web" Version="1.0.0" />
+  </ItemGroup>
+
 </Project>

@@ -25,4 +25,8 @@
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Source\Convesys.Authorisation.Tokens\Twilight.Platform.Web.Tokens.csproj" />
+  </ItemGroup>
+
 </Project>
