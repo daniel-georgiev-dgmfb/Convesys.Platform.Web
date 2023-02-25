@@ -4,7 +4,7 @@ using Twilight.Kernel.Logging;
 
 namespace Twilight.Platform.Web.HttpClient
 {
-    public class HttpClientLogger : IEventLogger<Twiligth.Platform.Web.HttpClient.HttpClient>
+    public class HttpClientLogger : IEventLogger<Web.HttpClient.HttpClient>
     {
         public void Log<TState>(SeverityLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
@@ -32,7 +32,7 @@ namespace Twilight.Platform.Web.HttpClient
         }
     }
 
-    public class BackchanelLogger : IEventLogger<Twiligth.Platform.Web.HttpClient.BackchannelCertificateValidator>
+    public class BackchanelLogger : IEventLogger<Web.HttpClient.BackchannelCertificateValidator>
     {
         public void Log<TState>(SeverityLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {

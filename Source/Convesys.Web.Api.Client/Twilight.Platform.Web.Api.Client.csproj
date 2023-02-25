@@ -22,7 +22,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Twilight.Platform.Kernel.Caching" Version="1.0.0" />
-    <PackageReference Include="Twilight.Platform.Web.HttpClient" Version="1.0.0" />
+    <PackageReference Include="Twilight.Platform.Web.HttpClient" Version="1.0.1" />
     <PackageReference Include="Twilight.Platform.Web.Tokens" Version="1.0.0" />
     <PackageReference Include="Twilight.Providers.MemoryCache" Version="1.0.0" />
   </ItemGroup>

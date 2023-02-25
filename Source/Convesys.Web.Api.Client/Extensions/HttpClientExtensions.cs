@@ -9,7 +9,6 @@ using Twilight.Kernel.Serialisation;
 using Twilight.Kernel.Web;
 using Twilight.Kernel.Web.Authorisation;
 using Twilight.MemoryCacheProvider;
-using Twilight.Platform.Web.Api.Client;
 using Twilight.Platform.Web.Tokens;
 
 namespace Twilight.Platform.Web.Api.Client.Extensions
@@ -24,8 +23,8 @@ namespace Twilight.Platform.Web.Api.Client.Extensions
             if (!dependencyResolver.Contains< IApiClient, ApiClient>())
                 dependencyResolver.RegisterType<IApiClient, ApiClient>(Lifetime.Transient);
 
-            if (!dependencyResolver.Contains<IHttpResourceRetriever, HttpClient>())
-                dependencyResolver.RegisterType<IHttpResourceRetriever, Twilight.Platform.Web.HttpClient>(Lifetime.Transient);
+            if (!dependencyResolver.Contains<IHttpResourceRetriever, HttpClient.HttpClient>())
+                dependencyResolver.RegisterType<IHttpResourceRetriever, HttpClient.HttpClient>(Lifetime.Transient);
 
             if (!dependencyResolver.Contains<IBearerTokenParser, BearerTokenParser>())
                 dependencyResolver.RegisterType<IBearerTokenParser, BearerTokenParser>(Lifetime.Transient);
